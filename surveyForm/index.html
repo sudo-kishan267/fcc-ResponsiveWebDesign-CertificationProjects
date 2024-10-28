@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Hola ! fill this out se`nior  </h1>
+    <p id="description">Gracias.. if you fill this out you fill this out..!!! .</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="first-name">Name: <input id="name" name="first-name" type="text" required placeholder="Tom.."/></label>
+       
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Tom@xyz.com" /></label>
+        <label id="number-label" for="number">Age  (optional) <input id="number" name="number" min="15" max="120" type="number" placeholder="15-120"  /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked value="0"/> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="1" /> Business</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        <label>Which dish you like (can be more than one.) ?</label>
+          
+          <label  for="0"><input class="inline" id="0" type="checkbox" required name="dish" value="0"/> Chiken Curry
+          </label>
+          <label for="1">
+          <input class="inline" id="1" type="checkbox" required name="dish" value="0"/> Maggi
+          </label>
+          <label class="inline" for="2">
+          <input class="inline" id="2" type="checkbox" required name="dish" value="0"/> Sote Bhasote
+          </label>
+          <label for="3">
+          <input class="inline" id="3" type="checkbox" required name="dish" value="0"/> Lehsuni Palak paneer
+          </label>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="0" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

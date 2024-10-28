@@ -1,12 +1,11 @@
 # FreeCodeCamp HTML & CSS Projects
 
-This repository contains all non-certification projects completed as part of the HTML and CSS course on FreeCodeCamp. Each project showcases my understanding of fundamental web development concepts and demonstrates my ability to create responsive and visually appealing web pages.
+This repository contains all certification projects completed as part of the Responsive Web Design course on FreeCodeCamp. Each project showcases my understanding of fundamental web development concepts and demonstrates my ability to create responsive and visually appealing web pages.
 
 ## Projects Included
 
-- **Project 1**: [Project Title & Brief Description]
-- **Project 2**: [Project Title & Brief Description]
-- **Project 3**: [Project Title & Brief Description]
+- **Project 1**: Survey Form
+
 
 ## Technologies Used
 
