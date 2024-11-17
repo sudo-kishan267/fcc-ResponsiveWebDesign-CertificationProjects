@@ -1,0 +1,316 @@
+:root {
+    --color1: #243642;
+    --color2: #387478;
+    --color3: #629584;
+    --font-color: #E2F1E7;
+
+}
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+html {
+    height: 100vh;
+    background-color: #629584;
+}
+
+/* ***************** Navbar CSS ******************* */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: var(--color1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-element {
+    padding: 0 20px;
+    text-decoration: none;
+
+    color: var(--font-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-element:hover {
+    color: var(--color2);
+    /* Change color on hover */
+}
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@ Main Section CSS @@@@@@@@@@@@@@@@ */
+
+.main-section {
+    color: var(--font-color);
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--color3), var(--color2));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-section>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -80;
+}
+
+.main-section>h2 {
+
+    margin-top: 20px;
+}
+
+.main-section>p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #243642;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@ Projects CSS @@@@@@@@@@@@@@@@ */
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* background: linear-gradient(to bottom right, var(--color1), var(--color2), var(--color3)); */
+    background-color: var(--color3);
+}
+
+.project-heading>p {
+    font-size: 2rem;
+    color: var(--font-color);
+    margin: 10 30 30 30;
+
+    font-weight: 700;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 0 10 0 10;
+
+}
+
+.tiles>a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-align: center;
+}
+
+
+.project {
+    color: var(--font-color);
+    background: var(--color1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+}
+
+.project-title:hover {
+    color: #629584;
+}
+
+.code {
+    font-size: 1.5rem;
+    visibility: hidden;
+    /* Hide the title text initially */
+
+
+}
+
+.project-title:hover .code {
+    color: orangered;
+    visibility: visible;
+    /* Show title text on hover */
+    opacity: 1;
+
+}
+
+.show-all {
+    padding: 10 25;
+    margin-bottom: 10;
+    margin-top: -20;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--font-color);
+    background-color: var(--color1);
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+/* @@@@@@@@@@@@@@@@@@ Contact-section CSS @@@@@@@@@@@@@@@@ */
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color1);
+    color: var(--font-color);
+    padding: 200px 0;
+    border-bottom: 5px solid var(--font-color);
+
+}
+
+.contact-section>h1 {
+
+    font-size: 2.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    max-width: 720px;
+
+}
+
+.btn {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--font-color);
+    padding: 0 20px;
+
+}
+
+.icon {
+    margin-right: 5px;
+
+}
+
+footer {
+    background-color: #629584;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 10%;
+
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        /* Stack navbar elements vertically */
+        height: auto;
+        align-items: flex-end;
+        /* Adjust height */
+    }
+
+    .navbar-element {
+        padding: 10px 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .main-section {
+        padding: 20px;
+        /* Add padding to main section */
+    }
+
+    .main-section>h1 {
+        font-size: 2.5rem;
+        /* Reduce font size */
+        margin-top: 0;
+        /* Remove negative margin */
+    }
+
+    .main-section>h2 {
+        font-size: 1.5rem;
+        /* Adjust font size for h2 */
+    }
+
+    .main-section>p {
+        font-size: 1.2rem;
+        /* Reduce font size */
+    }
+
+    .tiles {
+        grid-template-columns: 1fr;
+        /* Stack tiles vertically */
+        padding: 0 20px;
+        /* Add padding */
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+        /* Reduce font size */
+    }
+
+    .show-all {
+        font-size: 0.9rem;
+        /* Smaller font size */
+        padding: 5px 15px;
+        /* Adjust padding */
+    }
+
+    .contact-section {
+        padding: 100px 20px;
+        /* Adjust padding for contact section */
+    }
+
+    .contact-section>h1 {
+        font-size: 2rem;
+        /* Reduce font size */
+    }
+
+    .contact-links {
+        flex-direction: column;
+        /* Stack contact links vertically */
+        align-items: center;
+        /* Center items */
+    }
+
+    .btn {
+        font-size: 1rem;
+        /* Adjust button font size */
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    footer {
+        flex-direction: column;
+        /* Stack footer items vertically */
+        align-items: center;
+        /* Center items */
+    }
+}

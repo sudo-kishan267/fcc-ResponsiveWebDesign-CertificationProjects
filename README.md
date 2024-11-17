@@ -5,7 +5,8 @@ This repository contains all certification projects completed as part of the Res
 ## Projects Included
 
 - **Project 1**: Survey Form
-
+- **Project 2**: [Project Title & Brief Description]
+- **Project 3**: [Project Title & Brief Description]
 
 ## Technologies Used
 

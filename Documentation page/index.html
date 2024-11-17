@@ -1,0 +1,265 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <div class="content"><a class=" nav-link" href="#Introduction_to_Python">Introduction to Python</a></div>
+
+            <div class="content"><a class="nav-link" href="#Setting_Up_Python">Setting Up Python</a></div>
+            <div class="content"><a class="nav-link" href="#Basics_of_Python">Basics of Python</a></div>
+            <div class="content"><a class="nav-link" href="#Control_Structures">Control Structures</a></div>
+            <div class="content"><a class="nav-link" href="#Functions">Functions</a></div>
+            <div class="content"><a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a></div>
+            <div class="content"><a class="nav-link" href="#Working_with_Libraries">Working with Libraries</a></div>
+            <div class="content"><a class="nav-link" href="#Conclusion">Conclusion</a></div>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction_to_Python">
+                <header>Introduction to Python</header>
+                <div class="inner">
+                    <p class="para">Python is a high-level, interpreted programming language that emphasizes code
+                        readability and simplicity. Its clean syntax allows developers to express concepts in fewer
+                        lines of code than many other languages, making it particularly accessible for beginners.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Easy to Learn: Python's syntax is simple and intuitive, making it an excellent choice for
+                            beginners.</li>
+                        <li>Extensive Libraries: Offers a rich standard library and numerous third-party packages to
+                            extend functionality.</li>
+                        <li>Versatile: Supports multiple programming paradigms, including procedural, object-oriented,
+                            and functional programming.</li>
+                        <li>Cross-Platform: Runs on various operating systems like Windows, macOS, and Linux.</li>
+                    </ul>
+                    <h3>Prerequisites</h3>
+                    <p class="para">Before diving into Python, you should have:</p>
+                    <ul>
+                        <li>A basic understanding of programming concepts.</li>
+                        <li>Familiarity with the command line interface.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main-section" id="Setting_Up_Python">
+                <header>Setting Up Python</header>
+                <div class="inner">
+                    <h3>Installation</h3>
+                    <ol>
+                        <li>Download Python: Visit the <a href="https://www.python.org/" target="_blank">Official Python
+                                website</a> and download the latest version.</li>
+                        <li>Install: Follow the installation instructions for your operating system.</li>
+                        <li>Verify Installation: Open a terminal or command prompt and type:</li>
+
+                    </ol>
+                    <div class="code">
+                        <code>
+                            python --version 
+                        </code>
+                    </div>
+
+                    <h3>IDEs and Text Editors</h3>
+                    <ul>
+                        <li>IDEs: PyCharm, Jupyter Notebook, Visual Studio Code</li>
+                        <li>Text Editors: Sublime Text, Atom, Notepad++</li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="main-section" id="Basics_of_Python">
+                <header>Basics of Python</header>
+                <div class="inner">
+                    <h3>Hello, World!</h3>
+                    <p>To get started with Python, write your first program:</p>
+                    <div class="code">
+                        <code>
+                            print("Hello, World!")
+                            </code>
+                    </div>
+
+                    <h3>Variables and Data Types</h3>
+                    <div class="code">
+                        <!-- <pre> -->
+                        <code>
+                           <pre>
+# Integer 
+x = 10 
+                              
+# Float 
+y = 3.14
+                                
+# String
+name = "Alice"
+                               
+# Boolean
+is_active = True
+</pre>                          
+                        </code>
+                        <!-- </pre> -->
+
+                    </div>
+
+
+                    <h3>Lists and Dictionaries</h3>
+                    <h4>List</h4>
+                    <p>A list is a mutable sequence of values:</p>
+                    <div class="code">
+                        <!-- <pre> -->
+                        <code><pre>
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Outputs: apple
+</pre>
+                        </code>
+                        <!-- </pre> -->
+
+                    </div>
+                    <h4>Dictionaries</h4>
+                    <p>A dictionary is a collection of key-value pairs:</p>
+                    <div class="code">
+                        <code><pre>
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Outputs: apple
+</pre>
+                        </code>
+                        <!-- </pre> -->
+
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" id="Control_Structures">
+                <header>Control Structures</header>
+                <div class="inner">
+                    <h3>Conditional Statements</h3>
+                    <p>Use if, elif, and else for decision-making:</p>
+                    <div class="code">
+                        <code><pre>
+age = 20
+if age < 18:
+    print("Minor")
+elif age < 65:
+    print("Adult")
+else:
+    print("Senior")
+</pre>
+                            </code>
+                    </div>
+
+                    <h3>Loops</h3>
+                    <p>Iterate over a sequence:</p>
+                    <div class="code">
+                        <!-- <pre> -->
+                        <code>  <pre>
+for fruit in fruits:
+    print(fruit)
+</pre>                          
+                        </code>
+                        <!-- </pre> -->
+
+                    </div>
+                    <h3>While Loop</h3>
+                    <p>Continue as long as a condition is true:</p>
+                    <div class="code">
+                        <!-- <pre> -->
+                        <code>  <pre>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+</pre>                          
+                        </code>
+                        <!-- </pre> -->
+
+                    </div>
+
+                </div>
+                    
+            </section>
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <div class="inner">
+                    <h3>Defining Functions</h3>
+                    <p>Use the def keyword to define a function:
+
+                    </p>
+                    <div class="code">
+                        <code><pre>
+                        def greet(name):
+                            return f"Hello, {name}!"
+                        
+                        print(greet("Alice"))
+</pre>
+                            </code>
+                    </div>   
+                </div>                                 
+            </section>
+            <section class="main-section" id="Object-Oriented_Programming">
+                <header>Object-Oriented Programming</header>
+                <div class="inner">
+                    <h3>Classes and Objects</h3>
+                    <p>Define classes and create objects:</p>
+                    <div class="code">
+                        <code><pre>
+                            class Dog:
+                                def __init__(self, name):
+                                    self.name = name
+                        
+                                def bark(self):
+                                    return f"{self.name} says Woof!"
+                        
+                            my_dog = Dog("Buddy")
+                            print(my_dog.bark())
+</pre>
+                            </code>
+                    </div>  
+                </div>                                  
+            </section>
+            <section class="main-section" id="Working_with_Libraries">
+                <header>Working with Libraries</header>
+                <div class="inner">
+                    <h3>Importing Libraries</h3>
+                    <p>Use import to bring in libraries:</p>
+                    <div class="code">
+                        <code><pre>
+import math
+print(math.sqrt(16))  # Outputs: 4.0
+</pre>
+                            </code>
+                    </div>
+                    
+                    <h3>Popular Libraries</h3>
+                    <ul>
+                        <li>NumPy: For numerical operations.</li>
+                        <li>Pandas: For data manipulation and analysis.</li>
+                        <li>Matplotlib: For data visualization.</li>
+                        <li>Requests: For making HTTP requests.</li>
+                    </ul>
+                </div>                                  
+            </section>
+            <section class="main-section" id="Conclusion">
+                
+                <header>Conclusion</header>
+                
+                <div class="inner">
+                    <p>Python is a versatile and powerful programming language suitable for beginners and experienced developers alike. Its simplicity and vast ecosystem make it ideal for various applications.</p>
+                    <h3>Further Learning Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.python.org/3/">Official Python Documentation</a></li>
+        <li><a href="https://www.codecademy.com/learn/python">Codecademy Python Course</a></li>
+        <li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></li>
+                    </ul>
+                   
+                </div>                                  
+            </section>
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>
